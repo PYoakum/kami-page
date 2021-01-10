@@ -1,0 +1,23 @@
+{
+  "name": "kami-page",
+  "version": "1.0.0",
+  "description": "kami jamstack app for cf pages",
+  "main": "build.js",
+  "scripts": {
+    "build-all": "npm install && npm run build-js && npm run build-css && npm run build-html",
+    "test": "npm run test",
+    "build-html": "node build.js",
+    "build-js": "webpack",
+    "build-css": "node-sass --include-path scss src/scss/main.scss dist/public/home.css"
+  },
+  "author": "Peter Yoakum",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "marked": "^1.2.7",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
+  }
+}
