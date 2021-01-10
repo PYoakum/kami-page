@@ -38,13 +38,13 @@ module.exports = () => {
 
 
   fs.writeFile(
-    path.resolve(__dirname+'/../../dist/public/home.html'), 
+    path.resolve(__dirname+'/../../dist/public/index.html'), 
     pug.renderFile(__dirname+'/../pug/home.pug', homeContent),
     (err)=>{
       if(err){
         console.log('rendering error')
       } else {
-        console.log('rendered to '+__dirname+'/../pug/home.pug')
+        console.log('rendered to home.pug')
       }
     }
   )
