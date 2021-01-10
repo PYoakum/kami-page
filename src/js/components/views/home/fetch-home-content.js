@@ -7,9 +7,8 @@ const createFooter = require('create-footer');
 module.exports = async function(config){
   await fetch(mainConfig.homeContentUrl, {
     method: 'GET', 
-    mode: 'same-origin', 
+    mode: 'cors', 
     cache: 'default',
-    credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json'
     },

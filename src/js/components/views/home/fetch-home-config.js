@@ -4,9 +4,8 @@ module.exports = async function(configData){
 
   await fetch(mainConfig.homeConfigUrl, {
     method: 'GET', 
-    mode: 'same-origin', 
+    mode: 'cors', 
     cache: 'default',
-    credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json'
       
