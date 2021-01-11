@@ -11,7 +11,7 @@
     "build-css": "node-sass --include-path scss src/scss/main.scss dist/public/home.css"
   },
   "author": "Peter Yoakum",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "marked": "^1.2.7",
     "node-sass": "^5.0.0",
