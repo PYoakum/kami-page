@@ -44,7 +44,7 @@ module.exports = () => {
       if(err){
         console.log('rendering error')
       } else {
-        console.log('rendered to home.pug')
+        console.log('created dist/public/index.html')
       }
     }
   )

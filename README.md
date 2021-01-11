@@ -1,0 +1,3 @@
+# Kami-Page
+
+Coming soon!
